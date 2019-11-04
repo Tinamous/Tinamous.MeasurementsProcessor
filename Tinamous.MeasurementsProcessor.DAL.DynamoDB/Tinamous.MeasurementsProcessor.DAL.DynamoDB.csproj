@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.101.84" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tinamous.MeasurementsProcessor.Aws\Tinamous.MeasurementsProcessor.Aws.csproj" />
+    <ProjectReference Include="..\Tinamous.MeasurementsProcessor.DAL.Interfaces\Tinamous.MeasurementsProcessor.DAL.Interfaces.csproj" />
+    <ProjectReference Include="..\Tinamous.MeasurementsProcessor.Domain\Tinamous.MeasurementsProcessor.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

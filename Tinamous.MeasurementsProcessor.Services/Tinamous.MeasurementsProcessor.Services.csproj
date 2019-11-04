@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AnalysisUK.Tinamous.Membership.Messaging" Version="1.1.0.339" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="EasyNetQ" Version="3.7.1" />
+    <PackageReference Include="EasyNetQ.DI.Microsoft" Version="3.7.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tinamous.MeasurementsProcessor.Aws.Kinesis\Tinamous.MeasurementsProcessor.Aws.Kinesis.csproj" />
+    <ProjectReference Include="..\Tinamous.MeasurementsProcessor.Aws\Tinamous.MeasurementsProcessor.Aws.csproj" />
+    <ProjectReference Include="..\Tinamous.MeasurementsProcessor.DAL.DynamoDB\Tinamous.MeasurementsProcessor.DAL.DynamoDB.csproj" />
+    <ProjectReference Include="..\Tinamous.MeasurementsProcessor.DAL.Interfaces\Tinamous.MeasurementsProcessor.DAL.Interfaces.csproj" />
+    <ProjectReference Include="..\Tinamous.MeasurementsProcessor.Domain\Tinamous.MeasurementsProcessor.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

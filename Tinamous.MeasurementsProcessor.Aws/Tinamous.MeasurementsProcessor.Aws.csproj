@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.101.84" />
+    <PackageReference Include="AWSSDK.Kinesis" Version="3.3.100.93" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tinamous.MeasurementsProcessor.Domain\Tinamous.MeasurementsProcessor.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

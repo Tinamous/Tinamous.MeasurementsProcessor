@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tinamous.MeasurementsProcessor.ConsoleHost", "Tinamous.MeasurementsProcessor.ConsoleHost\Tinamous.MeasurementsProcessor.ConsoleHost.csproj", "{B6DE7A65-DEC1-4189-A892-F8BDFB4E77C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tinamous.MeasurementsProcessor.Aws.Kinesis", "Tinamous.MeasurementsProcessor.Aws.Kinesis\Tinamous.MeasurementsProcessor.Aws.Kinesis.csproj", "{EA5F0729-69EC-4DE6-BE76-4B30D13963A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tinamous.MeasurementsProcessor.Services", "Tinamous.MeasurementsProcessor.Services\Tinamous.MeasurementsProcessor.Services.csproj", "{EBB54B39-E8A0-49C8-B1EA-903887F10559}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tinamous.MeasurementsProcessor.DAL.DynamoDB", "Tinamous.MeasurementsProcessor.DAL.DynamoDB\Tinamous.MeasurementsProcessor.DAL.DynamoDB.csproj", "{7E76014E-6553-4BBA-9795-5C92C6F23113}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tinamous.MeasurementsProcessor.DAL.Interfaces", "Tinamous.MeasurementsProcessor.DAL.Interfaces\Tinamous.MeasurementsProcessor.DAL.Interfaces.csproj", "{408E3B2A-5607-4B84-8920-575BCDFAB36C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{BA169785-E6AE-4401-B8E9-5FBB30BDB37A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{74946DA5-1EB5-43E2-BFFD-7A2D57AB8BD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{9FBA3814-145A-48A1-855B-566A28339F41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A5C18642-7AE6-4F72-A48F-2FE31E162135}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tinamous.MeasurementsProcessor.Domain", "Tinamous.MeasurementsProcessor.Domain\Tinamous.MeasurementsProcessor.Domain.csproj", "{F7BE0B88-1BB3-44AA-A5AD-B85638253B24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tinamous.MeasurementsProcessor.Aws", "Tinamous.MeasurementsProcessor.Aws\Tinamous.MeasurementsProcessor.Aws.csproj", "{333D1065-FCB7-4959-9974-1C7D2D646543}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinamous.MeasurementsProcessor.Services.Tests", "Tinamous.MeasurementsProcessor.Services.Tests\Tinamous.MeasurementsProcessor.Services.Tests.csproj", "{40451D2B-A0A4-434D-AB60-99AD6F0993C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6DE7A65-DEC1-4189-A892-F8BDFB4E77C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6DE7A65-DEC1-4189-A892-F8BDFB4E77C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6DE7A65-DEC1-4189-A892-F8BDFB4E77C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6DE7A65-DEC1-4189-A892-F8BDFB4E77C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA5F0729-69EC-4DE6-BE76-4B30D13963A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5F0729-69EC-4DE6-BE76-4B30D13963A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5F0729-69EC-4DE6-BE76-4B30D13963A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5F0729-69EC-4DE6-BE76-4B30D13963A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB54B39-E8A0-49C8-B1EA-903887F10559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB54B39-E8A0-49C8-B1EA-903887F10559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB54B39-E8A0-49C8-B1EA-903887F10559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB54B39-E8A0-49C8-B1EA-903887F10559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E76014E-6553-4BBA-9795-5C92C6F23113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E76014E-6553-4BBA-9795-5C92C6F23113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E76014E-6553-4BBA-9795-5C92C6F23113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E76014E-6553-4BBA-9795-5C92C6F23113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{408E3B2A-5607-4B84-8920-575BCDFAB36C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408E3B2A-5607-4B84-8920-575BCDFAB36C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408E3B2A-5607-4B84-8920-575BCDFAB36C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408E3B2A-5607-4B84-8920-575BCDFAB36C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7BE0B88-1BB3-44AA-A5AD-B85638253B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7BE0B88-1BB3-44AA-A5AD-B85638253B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7BE0B88-1BB3-44AA-A5AD-B85638253B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7BE0B88-1BB3-44AA-A5AD-B85638253B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{333D1065-FCB7-4959-9974-1C7D2D646543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333D1065-FCB7-4959-9974-1C7D2D646543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333D1065-FCB7-4959-9974-1C7D2D646543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333D1065-FCB7-4959-9974-1C7D2D646543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40451D2B-A0A4-434D-AB60-99AD6F0993C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40451D2B-A0A4-434D-AB60-99AD6F0993C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40451D2B-A0A4-434D-AB60-99AD6F0993C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40451D2B-A0A4-434D-AB60-99AD6F0993C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6DE7A65-DEC1-4189-A892-F8BDFB4E77C9} = {BA169785-E6AE-4401-B8E9-5FBB30BDB37A}
+		{EA5F0729-69EC-4DE6-BE76-4B30D13963A0} = {74946DA5-1EB5-43E2-BFFD-7A2D57AB8BD7}
+		{EBB54B39-E8A0-49C8-B1EA-903887F10559} = {9FBA3814-145A-48A1-855B-566A28339F41}
+		{7E76014E-6553-4BBA-9795-5C92C6F23113} = {74946DA5-1EB5-43E2-BFFD-7A2D57AB8BD7}
+		{408E3B2A-5607-4B84-8920-575BCDFAB36C} = {74946DA5-1EB5-43E2-BFFD-7A2D57AB8BD7}
+		{F7BE0B88-1BB3-44AA-A5AD-B85638253B24} = {A5C18642-7AE6-4F72-A48F-2FE31E162135}
+		{333D1065-FCB7-4959-9974-1C7D2D646543} = {74946DA5-1EB5-43E2-BFFD-7A2D57AB8BD7}
+		{40451D2B-A0A4-434D-AB60-99AD6F0993C1} = {9FBA3814-145A-48A1-855B-566A28339F41}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12ECE609-8A57-4C0F-BC6B-3F90E8519A3A}
+	EndGlobalSection
+EndGlobal
