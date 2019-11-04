@@ -16,4 +16,8 @@ jobs:
       run: docker build . --file Tinamous.MeasurementsProcessor.ConsoleHost/Dockerfile --tag docker.pkg.github.com/tinamous/tinamous.measurementsprocessor/tinamous-measurements-processor:${{ github['sha'] }}
     - name: Push Docker image
       run: docker push docker.pkg.github.com/tinamous/tinamous.measurementsprocessor/tinamous-measurements-processor:${{ github['sha'] }}
+    - name: Docker tagt latest
+      run: docker tag docker.pkg.github.com/tinamous/tinamous.measurementsprocessor/tinamous-measurements-processor:${{ github['sha'] }} docker.pkg.github.com/tinamous/tinamous.measurementsprocessor/tinamous-measurements-processor:latest
+    - name: Push Docker latest image
+      run: docker push docker.pkg.github.com/tinamous/tinamous.measurementsprocessor/tinamous-measurements-processor:latest
 
