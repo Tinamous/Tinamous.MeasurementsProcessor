@@ -10,5 +10,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Authenticate to Github
+      run: docker login docker.pkg.github.com --username BookSwapSteve
     - name: Build the Docker image
       run: docker build . --file Tinamous.MeasurementsProcessor.ConsoleHost/Dockerfile --tag tinamous-measurements-processor:$(date +%s)
+
