@@ -15,5 +15,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Tinamous.MeasurementsProcessor.ConsoleHost/Dockerfile --tag tinamous-measurements-processor:$(date +%s)
     - name: Push Docker image
-      run: docker push docker.pkg.github.com/Tinamous/Tinamous.MeasurementsProcessor/tinamous-measurements-processor:$(date +%s)
+      run: docker push docker.pkg.github.com/tinamous/tinamous.measurementsprocessor/tinamous-measurements-processor:$(date +%s)
 
