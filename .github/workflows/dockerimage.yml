@@ -11,13 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Log into docker registry
-      uses: actions/docker/login@master
-      env:
-          DOCKER_REGISTRY_URL: docker.pkg.github.com
-          DOCKER_USERNAME: ${{ github.actor }}
-          DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-      if: github.event_name == 'push'
-
+      run: docker login docker.pkg.github.com --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}
     - name: Build the Docker image
       run: docker build . --file Tinamous.MeasurementsProcessor.ConsoleHost/Dockerfile --tag tinamous-measurements-processor:$(date +%s)
+    - name: Push Docker image
+      run: docker push docker.pkg.github.com/Tinamous/Tinamous.MeasurementsProcessor/tinamous-measurements-processor:$(date +%s)
 
