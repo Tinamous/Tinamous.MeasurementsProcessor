@@ -20,4 +20,4 @@ jobs:
     - name: Run tests with dotnet
       run: dotnet test --configuration Release
     - name: Publish
-      run: dotnet publish --configuration Release -o ./app"
+      run: dotnet publish --configuration Release -o ./app
