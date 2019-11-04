@@ -13,5 +13,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 2.2.108
+    - name: Restore from Tinamous public NuGet repository
+      run: dotnet restore -s https://www.myget.org/F/tinamous/api/v3/index.json
     - name: Build with dotnet
       run: dotnet build --configuration Release
