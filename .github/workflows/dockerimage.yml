@@ -10,8 +10,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Authenticate to Github
-      run: docker login docker.pkg.github.com --username BookSwapSteve
+    - name: Log into docker registry
+      uses: actions/docker/login@master
+      env:
+	  DOCKER_REGISTRY_URL: docker.pkg.github.com
+	  DOCKER_USERNAME: ${{ github.actor }}
+	  DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+      if: github.event_name == 'push'
+
     - name: Build the Docker image
       run: docker build . --file Tinamous.MeasurementsProcessor.ConsoleHost/Dockerfile --tag tinamous-measurements-processor:$(date +%s)
 
