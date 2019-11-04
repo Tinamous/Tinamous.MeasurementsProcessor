@@ -13,9 +13,9 @@ jobs:
     - name: Log into docker registry
       uses: actions/docker/login@master
       env:
-	  DOCKER_REGISTRY_URL: docker.pkg.github.com
-	  DOCKER_USERNAME: ${{ github.actor }}
-	  DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          DOCKER_REGISTRY_URL: docker.pkg.github.com
+          DOCKER_USERNAME: ${{ github.actor }}
+          DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
       if: github.event_name == 'push'
 
     - name: Build the Docker image
