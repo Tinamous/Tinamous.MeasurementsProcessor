@@ -17,3 +17,5 @@ jobs:
       run: dotnet restore -s https://www.myget.org/F/tinamous/api/v3/index.json -s https://api.nuget.org/v3/index.json
     - name: Build with dotnet
       run: dotnet build --configuration Release
+    - name: Run tests with dotnet
+      run: dotnet test --configuration Release
