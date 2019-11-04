@@ -13,7 +13,7 @@ jobs:
     - name: Log into docker registry
       run: docker login docker.pkg.github.com --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}
     - name: Build the Docker image
-      run: docker build . --file Tinamous.MeasurementsProcessor.ConsoleHost/Dockerfile --tag docker.pkg.github.com/tinamous/tinamous.measurementsprocessor/tinamous-measurements-processor:$(date +%s)
+      run: docker build . --file Tinamous.MeasurementsProcessor.ConsoleHost/Dockerfile --tag docker.pkg.github.com/tinamous/tinamous.measurementsprocessor/tinamous-measurements-processor:${{ github['sha'] }}
     - name: Push Docker image
-      run: docker push docker.pkg.github.com/tinamous/tinamous.measurementsprocessor/tinamous-measurements-processor:$(date +%s)
+      run: docker push docker.pkg.github.com/tinamous/tinamous.measurementsprocessor/tinamous-measurements-processor:${{ github['sha'] }}
 
