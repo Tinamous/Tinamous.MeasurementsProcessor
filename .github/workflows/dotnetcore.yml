@@ -14,6 +14,6 @@ jobs:
       with:
         dotnet-version: 2.2.108
     - name: Restore from Tinamous public NuGet repository
-      run: dotnet restore -s https://www.myget.org/F/tinamous/api/v3/index.json
+      run: dotnet restore -s https://www.myget.org/F/tinamous/api/v3/index.json -s https://api.nuget.org/v3/index.json
     - name: Build with dotnet
       run: dotnet build --configuration Release
