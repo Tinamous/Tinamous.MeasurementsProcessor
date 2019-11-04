@@ -6,7 +6,7 @@ WORKDIR /src
 COPY ["Tinamous.MeasurementsProcessor.ConsoleHost/Tinamous.MeasurementsProcessor.ConsoleHost.csproj", "Tinamous.MeasurementsProcessor.ConsoleHost/"]
 RUN dotnet restore "Tinamous.MeasurementsProcessor.ConsoleHost/Tinamous.MeasurementsProcessor.ConsoleHost.csproj"  -s https://www.myget.org/F/tinamous/api/v3/index.json -s https://api.nuget.org/v3/index.json
 COPY . .
-WORKDIR "/Tinamous.MeasurementsProcessor.ConsoleHost"
+WORKDIR "/src/Tinamous.MeasurementsProcessor.ConsoleHost"
 RUN dotnet build "Tinamous.MeasurementsProcessor.ConsoleHost.csproj" -c Release -o /app
 
 FROM build AS publish
