@@ -356,6 +356,7 @@ namespace Tinamous.MeasurementsProcessor.Services.Processors
                     case "operatorid":
                         measurement.OperatorId = measurementField.StringValue;
                         break;
+                    case "soc": // stage of charge (expect %)
                     case "ps-soc": // (stage of charge) to match photon battery shield.
                     case "battery":
                     case "batterylevel":
@@ -363,6 +364,7 @@ namespace Tinamous.MeasurementsProcessor.Services.Processors
                         measurement.BatteryLevel = measurementField.Value;
                         measurement.BatteryLevelPercentage = Convert.ToInt32(measurementField.Value);
                         break;
+                    case "rf":
                     case "rfstrength":
                         measurement.RfStrength = Convert.ToInt32(measurementField.Value);
                         break;
